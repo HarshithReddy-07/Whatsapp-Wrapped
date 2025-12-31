@@ -42,10 +42,18 @@ Backend runs on: `http://localhost:8000`
 ### Terminal 2 - Frontend
 ```bash
 cd frontend
+npm install
+# If using a tunnel or accessing from mobile, set the backend URL explicitly:
+# REACT_APP_API_URL=https://<your-backend-tunnel> npm start
 npm start
 ```
 
-Frontend runs on: `http://localhost:3000`
+Frontend runs on: `http://localhost:3000` (by default)
+
+**Notes for mobile / remote access:**
+- Do NOT rely on `http://localhost:8000` when accessing the app from a mobile device — `localhost` will refer to the mobile device.
+- If you expose the frontend via a tunnel, set `REACT_APP_API_URL` to your backend tunnel URL (e.g. `https://backend-123.tunnel.example`) so API requests route correctly.
+- The app performs a quick `/api/health` check before attempting uploads and will show a helpful error if the backend is unreachable or blocked by mixed content (HTTP vs HTTPS).
 
 ## API Documentation
 
