@@ -1,0 +1,66 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Python virtual environments
+venv/
+.env/
+.venv/
+env/
+backend/venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+*.log
+
+# Build / distribution
+build/
+dist/
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Databases
+*.sqlite3
+*.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Ignore exported chat (sensitive)
+WhatsApp Chat with Ugadi Pachadi 🤟✌️☝️.txt
+
+# Ignore other exported chats
+*.txt
+
+# Ignore local settings
+*.local
+
+# Ignore secrets
+*.pem
+*.key
+
+# Ignore coverage
+coverage/
+
+# Ignore node lock files (optional)
+# package-lock.json
+# yarn.lock
